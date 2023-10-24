@@ -27,12 +27,8 @@ const platform = {
 const obstacles = [];
 
 function createObstacle() {
-  const scale = Math.sin(Math.random(1)) * 2
-  if(scale < 0.7) {
-    scale = 0.7
-  }
   const obstacleWidth = 20;
-  const obstacleHeight = character.height / 3 * scale;
+  const obstacleHeight = 20;
   const obstacleColor = 'red';
   const obstacleX = canvas.width;
   const obstacleY = platform.y - obstacleHeight;
